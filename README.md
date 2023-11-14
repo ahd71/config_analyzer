@@ -11,8 +11,10 @@ The primary objective is to facilitate a thorough review of your configuration t
 - Manual
     - Copy files from `custom_components/config_analyzer` into your Home Assistant `config` folder and restart Home Assistant.
     - On the integration page, click add integration and search for `config_analyzer` and add it.
+[![Open your Home Assistant instance and set up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=config_analyzer)
+
 - HACS
-    - *(not available yet; planned as soon as possible)*
+    - add `https://github.com/ahd71/config_analyzer` as custom repository, search for config_analyzer and install as usual.
 
 # Usage
 The integration expose a single service named `run`.
