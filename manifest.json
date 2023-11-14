@@ -1,0 +1,11 @@
+{
+  "domain": "config_analyzer",
+  "name": "Home Assistant Configuration Analyzer",
+  "codeowners": ["@ahd71"],
+  "dependencies": [],
+  "documentation": "https://github.com/ahd71/config_analyzer",
+  "iot_class": "calculated",
+  "requirements": ["networkx", "graphviz", "pyvis", "pandas", "matplotlib", "scipy", "openpyxl"],
+  "config_flow": true,
+  "version": "0.1.0"
+}
