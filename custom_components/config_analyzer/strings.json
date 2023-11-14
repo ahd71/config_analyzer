@@ -1,0 +1,32 @@
+{
+  "title": "Config Analyzer (from string.json)",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add home assistant configuration analyzer",
+        "description": "",
+        "data": {
+          "name": "[%key:common::config_flow::data::name%]",
+          "folder": "[%key:common::config_flow::data::folder%]"
+        },
+        "data_description": {
+          "name": "Name (json)",
+          "folder": "folder for output"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "name": "[%key:common::config_flow::data::name%]",
+          "folder": "[%key:component::config_flow::config::step::user::data::folder%]"
+        },
+        "data_description": {
+          "round": "[%key:component::config_flow::config::step::user::data_description::round%]"
+        }
+      }
+    }
+  }
+}

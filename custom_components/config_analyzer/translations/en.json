@@ -1,0 +1,17 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Integration already configured"
+        },
+        "error": {
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "folder": "Folder"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+run:
+  description: Runs one or several plugins from the Home Assistant configuration analyzer
+  fields:
+    plugin:
+        default: "*"
+        example: "plugin name wildcard matching, e.g plugin1, stable*, *"
