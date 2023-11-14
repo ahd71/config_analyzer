@@ -81,6 +81,11 @@ async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
             "sensor.last_analyzed", "Started"
         )  # TODO: How can I avoid hard coded entity name?; and how can i get it with the correct time zone
 
+        output_folder = hass.config.path() + "/custom_components/" + DOMAIN + '/output'
+
+        if not os.path.exists(output_folder):
+            os.makedirs(output_folder)
+
         loaded_plugins = await load_plugins(hass)
         for plugin in loaded_plugins:
             p = plugin.PluginClass()
