@@ -1,0 +1,1 @@
+# Configuration Analyzer installation via HACS
